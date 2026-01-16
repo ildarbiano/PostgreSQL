@@ -65,9 +65,11 @@ postgres=# \dp test_a					-Privileges на объект 		-
 \du, \dg, \dr						—Users/Groups/Roles (пользователи/группы)
 postgres=# \dx+				                -Objects in extension "pageinspect". Object description
 postgres=# \dx+						-какие содержатся, в EXTENTION, функции 
-\dx							- Показать расширения базы данных
-\df							- Показать функции
-postgres=# \db						-список tablespaces текущей Базы Данных
+\dx							-Показать расширения базы данных
+\df							-Показать функции
+postgres=# \db						-список tablespaces, текущей Базы Данных
+postgres=# \dRp+					-список публикаций PUBLICATION, текущей Базы Данных
+postgres=# \dRs						-список подписок SUBSCRIPTION, текущей Базы Данных
 postgres-#						-ожидание завершения ввода запроса. ";"
 postgres-#						-ожидание завершения ввода запроса. "^c"
 postgres=# \!						-вход в директорию кластера postgres@postgres:/usr/lib/postgresql/14/bin$
